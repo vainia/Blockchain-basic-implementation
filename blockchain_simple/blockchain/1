@@ -1,6 +1,0 @@
-{
-    'name' : Genesis,
-    'amount' : 1,
-    'to_whom' : Block,
-    'hash' : 0
-}
