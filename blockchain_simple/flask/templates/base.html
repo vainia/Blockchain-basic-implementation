@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Blockchain test</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   </head>
+   <body>
+
+      <div class="container">
+         <div class="row">
+            <div class="col-6 mx-auto mt-5">
+               {% block content %}
+
+               {% endblock %}
+            </div>
+         </div>
+      </div>
+
+      <div class="container">
+         <div class="row">
+            <div class="col-6 mx-auto mt-5 text-center">
+               <form action="{{ url_for('check') }}" method="GET">
+                  <button type="submit" class="btn btn-success">Check integrity</button>
+               </form>
+               <div class="row">
+                  <div class="col-6 mx-auto mt-5">
+                     {% block checking %}
+
+                     {% endblock %}
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </body>
+</html>
